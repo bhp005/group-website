@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Group website to host group projects" />
+    <meta name="authors" content="Bhavin, Sujoy, Christain, Sultan, Luis" />
+    <title>End One | About</title>
+    <link rel="stylesheet" href="css\style2.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1><span class="Endone"> END ONE </span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="hero">
+      <h1>About Us</h1>
+      <div class="review-box">
+        <div id="slide">
+          <div class="card">
+            <div class="profile">
+              <img src="img\pic1.jpg" alt="girl img" />
+              <div>
+                <h3>Bhavin Patel</h3>
+                <p>Web designer, FrontEnd Developer</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+              necessitatibus praesentium maiores placeat dolorem exercitationem
+              rerum, culpa amet porro neque nostrum quod et eos provident! Vitae
+              natus iure minima sequi!
+            </p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="img\pic2.jpg" alt="girl img" />
+              <div>
+                <h3>Christain</h3>
+                <p>Web designer, Front End Developer, Childrens Author</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+              necessitatibus praesentium maiores placeat dolorem exercitationem
+              rerum, culpa amet porro neque nostrum quod et eos provident! Vitae
+              natus iure minima sequi!
+            </p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="img\pic3.jpg" alt="girl img" />
+              <div>
+                <h3>Sujoy</h3>
+                <p>Web designer, Front End Developer</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+              necessitatibus praesentium maiores placeat dolorem exercitationem
+              rerum, culpa amet porro neque nostrum quod et eos provident! Vitae
+              natus iure minima sequi!
+            </p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="img\pic4.jpg" alt="girl img" />
+              <div>
+                <h3>Sultan</h3>
+                <p>Web designer</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+              necessitatibus praesentium maiores placeat dolorem exercitationem
+              rerum, culpa amet porro neque nostrum quod et eos provident! Vitae
+              natus iure minima sequi!
+            </p>
+          </div>
+        </div>
+        <div class="sidebar">
+          <img src="img\up-arrow.png" id="upArrow" />
+          <img src="img\down-arrow.png" id="downArrow" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var slide = document.getElementById("slide");
+      var upArrow = document.getElementById("upArrow");
+      var downArrow = document.getElementById("downArrow");
+      let x = 0;
+      upArrow.onclick = function () {
+        if (x > "-900") {
+          x = x - 300;
+          slide.style.top = x + "px";
+        }
+      };
+      downArrow.onclick = function () {
+        if (x < 0) {
+          x = x + 300;
+          slide.style.top = x + "px";
+        }
+      };
+    </script>
+    <footer>
+      <p>FrontEnd developers 2022 &copy;</p>
+    </footer>
+  </body>
+</html>
